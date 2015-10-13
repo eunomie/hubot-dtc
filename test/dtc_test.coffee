@@ -12,5 +12,5 @@ describe 'dtc', ->
     require('../src/dtc')(@robot)
 
   it 'registers respond listeners', ->
-    expect(@robot.respond.args[0][0].toString()).to.equal("/dernier (dtc|dans ton chat)/i")
-    expect(@robot.respond.args[0][0].toString()).to.equal("/^ *(dtc|dans ton chat)/i")
+    expect(@robot.respond.args[0][0].toString()).to.equal("/dernier dans ton chat/i")
+    expect(@robot.respond.args[0][0].toString()).to.equal("/dtc/i")

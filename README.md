@@ -8,8 +8,8 @@ A little script to get quotes from [Dans Ton Chat](http://danstonchat.com/).
 
 Returns the last quote or a random one.
 
-* `robot dernier (dtc|dans ton chat)`: returns the last one
-* `robot (dtc|dans ton chat)`: returns a random one
+* `robot dernier dans ton chat`: returns the last one
+* `robot dtc`: returns a random one
 
 
 * [cheerio](https://github.com/MatthewMueller/cheerio)

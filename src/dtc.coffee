@@ -9,8 +9,8 @@
 #   None
 #
 # Commands:
-#   hubot dernier {dtc|dans ton chat}- Returns last quote
-#   hubot {dtc|dans ton chat} - Returns random quote
+#   hubot dernier dans ton chat- Returns last quote
+#   hubot dtc - Returns random quote
 #
 # Author:
 #   Eunomie
@@ -19,10 +19,10 @@ cheerio = require('cheerio')
 he = require('he')
 
 module.exports = (robot)->
-  robot.respond /dernier (dtc|dans ton chat)/i, (message)->
+  robot.respond /dernier dans ton chat/i, (message)->
     send_quote message, 'http://danstonchat.com', (text)->
       message.send text
-  robot.respond /^ *(dtc|dans ton chat)/i, (message)->
+  robot.respond /dtc/i, (message)->
     send_quote message, 'http://danstonchat.com/random.html', (text)->
       message.send text
 
