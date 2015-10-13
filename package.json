@@ -1,7 +1,7 @@
 {
   "name": "hubot-dtc",
   "description": "A script for Hubot to display last and random quotes from danstonchat.com",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "Yves Brissaud <yves.brissaud@gmail.com",
   "license": "MIT",
   "keywords": [
