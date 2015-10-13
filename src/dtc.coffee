@@ -22,8 +22,8 @@ module.exports = (robot)->
   robot.respond /dernier (dtc|dans ton chat)/i, (message)->
     send_quote message, 'http://danstonchat.com', (text)->
       message.send text
-  robot.respond /^(dtc|dans ton chat)/i, (message)->
-    send_quote message, 'http://danstonchat.com/random.htlm', (text)->
+  robot.respond /^ *(dtc|dans ton chat)/i, (message)->
+    send_quote message, 'http://danstonchat.com/random.html', (text)->
       message.send text
 
 send_quote = (message, location, response_handler)->
