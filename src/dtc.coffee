@@ -36,10 +36,18 @@ send_quote = (message, location, response_handler)->
       location = response.headers['location']
       return send_quote(message, location, response_handler)
 
-    txt = get_quote(body, "p.item-content")
+    txt = get_quote(body, "p.item-content a")
 
     response_handler txt
 
 get_quote = (body, selector)->
   $ = cheerio.load(body)
-  he.decode $(selector).first().text()
+  res = []
+  $(selector).first().contents().map((i, el) ->
+    $(this).text()
+  ).filter((i, txt) ->
+    txt != ''
+  ).map((i, txt) ->
+    a.push txt
+  )
+  he.decode txt.join '\n'
