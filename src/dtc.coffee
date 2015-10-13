@@ -48,6 +48,6 @@ get_quote = (body, selector)->
   ).filter((i, txt) ->
     txt != ''
   ).map((i, txt) ->
-    a.push txt
+    res.push txt
   )
-  he.decode txt.join '\n'
+  he.decode res.join '\n'
