@@ -1,0 +1,33 @@
+{
+  "name": "hubot-dtc",
+  "description": "A script for Hubot to display last and random quotes from danstonchat.com",
+  "version": "0.1.0",
+  "author": "Yves Brissaud <yves.brissaud@gmail.com",
+  "license": "MIT",
+  "keywords": [
+    "hubot",
+    "hubot-scripts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hubot-scripts/hubot-dtc"
+  },
+  "bugs": {
+    "url": "https://github.com/hubot-scripts/hubot-dtc/issues"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6",
+    "cheerio": "0.7.0",
+    "he": "~0.4.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "sinon-chai": "*",
+    "sinon": "*"
+  },
+  "main": "index.coffee",
+  "scripts": {
+    "test": "script/test"
+  }
+}
